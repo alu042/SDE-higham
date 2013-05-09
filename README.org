@@ -1,0 +1,21 @@
+#+TITLE: Numerical methods for stochastic differential equations
+
+* Overview
+Modified from the MATLAB implementations in
+  Higham "An Algorithmic Introduction to Numerical Simulation of Stochastic Differential Equations", SIAM Review, Vol. 43, No. 3, 2001
+
+Details about the algorithms are in the paper. 
+
+* List of algorithms
+
+- Simulation of a Brownian path, bpath2.py
+- Function along a Brownian path, bpath3.py
+- Approximate stochastic integrals, stint.py
+- Euler-Maruyama method on linear SDE, em.py
+- Test strong convergence of Euler-Maruyama, emstrong.py
+- Test weak convergence of Euler-Maruyama, emweak.py
+- Test strong convergence of Milstein, milstrong.py
+- Mean-square and asymptotic stability test for E-M, stab.py
+- Test stochastic chain rule, chain.py
+
+
