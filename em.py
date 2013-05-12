@@ -1,6 +1,6 @@
 #EM Euler-Maruyama method on a linear SDE
 #
-# SDE is dX = gamma*X dt + mu*X dW, X(0) = Xzero
+# SDE is dX = gamma*X dt + mu*X dW,  X(0) = Xzero
 #      where gamma = 2, mu = 1, and Xzero = 1
 #
 # Discretized Brownian path over [0,1] has dt = 2^(-8).
@@ -35,8 +35,8 @@ for j in xrange(1,int(L)+1):
     Xem[j] = Xem[j-1] + Dt*gamma*Xem[j-1] + mu*Xem[j-1]*Winc
 
 emerr=np.abs(Xem[-1]-Xtrue[-1])
-print "error: ", emerr
+print "Error at endpoint: ", emerr
 
-ax.plot(np.linspace(0,T,T/Dt+1),Xem,'r--*')
+ax.plot(np.linspace(0,T,L+1),Xem,'r--*')
 ax.legend(("exact","em"),loc=2)
 plt.show()

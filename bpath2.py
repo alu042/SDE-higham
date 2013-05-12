@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 np.random.seed(100)
 T=1; N=500; dt=float(T)/N; 
-t = np.linspace(0,T,T/dt+1)
+t=np.linspace(0,T,N+1)
 
 dW=np.sqrt(dt)*np.random.randn(N)
 W=np.cumsum(dW);

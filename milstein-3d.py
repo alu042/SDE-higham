@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 np.random.seed(101)
 T=1; Delta=2**(-9); delta=Delta**2
-L = int(T/Delta); K = int(Delta/delta)
+L=int(T/Delta); K=int(Delta/delta)
 
 X1 = np.zeros(L+1); X2 = np.zeros(L+1); X3 = np.zeros(L+1)
 Y2 = 0
@@ -37,9 +37,9 @@ for j in range(1,L+1):
             0.9*X2[j-1]*0.5*(X2[j-1] - X3[j-1])*Delta
     X3[j] = X3[j-1] + (X2[j-1] - X3[j-1])*Delta
 
-plt.plot(np.linspace(0,T,T/Delta + 1), X1, 'r-')
-plt.plot(np.linspace(0,T,T/Delta + 1), X2, 'b--')
-plt.plot(np.linspace(0,T,T/Delta + 1), X3, 'k-.')
+plt.plot(np.linspace(0,T,L+1), X1, 'r-')
+plt.plot(np.linspace(0,T,L+1), X2, 'b--')
+plt.plot(np.linspace(0,T,L+1), X3, 'k-.')
 plt.legend(("$X^1$", "$X^2$", "$X^3$"))
 plt.xlabel('t'); plt.ylabel('X',rotation=0)
 plt.show()

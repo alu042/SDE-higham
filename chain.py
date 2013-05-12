@@ -37,5 +37,6 @@ plt.xlabel("t",fontsize=12)
 plt.ylabel("V(X)",fontsize=12,rotation=0)
 
 print "Max disrepancy is: ", np.max(np.abs(np.sqrt(Xem1)-Xem2))
+
 plt.show()
 
