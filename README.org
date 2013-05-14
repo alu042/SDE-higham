@@ -20,6 +20,6 @@ Details about the algorithms can be found in the paper.
 | milstrong.py   | Test strong convergence of Milstein method                    |
 | stab.py        | Mean-square and asymptotic stability test for E-M             |
 | chain.py       | Test stochastic chain rule                                    |
-| milstein-3d.py | Milstein's method applied to a 3D SDE (not part of SIAM paper |
+| milstein-3d.py | Milstein's method applied to a 3D SDE (not part of SIAM paper)|
 
 
